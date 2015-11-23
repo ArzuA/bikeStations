@@ -7,7 +7,7 @@
         <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
         <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD4lalYLgkL5eKl6GqPANXhol9At4V16E"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD4lalYLgkL5eKl6GqPANXhol9At4V16E&libraries=places"></script>
         <script type="text/javascript" src="js/bike_stations.js"></script>
         <link rel="stylesheet" type="text/css"  href="vendor/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css"  href="css/style.css">
@@ -38,7 +38,10 @@
                 <div class="row">
                     <div class="col-md-10">
                         <h3>STATION MAP</h3>
+
                         <div id="stations-map"></div>
+                        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                        <div id="legend"></div>
                     </div>
                     <div class="col-md-2">
                         <h3>STATION LIST</h3>
@@ -48,16 +51,16 @@
                         <table id="station-details">
                             <script id="station-detail-template" type="text/template">
                                     <tr>
-                                        <td>Available Docks</td><td><%= availableDocks %></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total Docks</td><td><%= totalDocks %></td>
-                                    </tr>
-                                    <tr>
                                         <td>Status Value</td><td><%= statusValue %></td>
                                     </tr>
                                     <tr>
                                         <td>Available Bikes</td><td><%= availableBikes %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Available Docks</td><td><%= availableDocks %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Docks</td><td><%= totalDocks %></td>
                                     </tr>
                                 <hr />
                             </script>
@@ -70,7 +73,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="footer-copyright center"><small>&copy; 2014 TORONTO BIKE</small></div>
+                        <div class="footer-copyright center"><small>&copy; 2015 TORONTO BIKE</small></div>
                     </div>
                 </div>
             </div>
