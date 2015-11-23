@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+body {
+    padding: 10px;
+    color: #6b6b6b;
+    font-family: 'Titillium Web', Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+    position: relative;
+}
+
+.header {
+    height: 45px;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+table#station-details{
+    margin-top: 10px;
+}
+
+table#station-details td,th{
+    padding-right:2em;
+}
+
+#stations-map {
+    width: 100%;
+    height: 400px;
+    max-width:1200px;
+}

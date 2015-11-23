@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Toronto Bike Stations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bike sharing system in Toronto">
+        <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD4lalYLgkL5eKl6GqPANXhol9At4V16E"></script>
+        <script type="text/javascript" src="js/bike_stations.js"></script>
+        <link rel="stylesheet" type="text/css"  href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css"  href="css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href=".">TORONTO BIKE</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Bike Stations<span class="sr-only">(current)</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3>STATION MAP</h3>
+                        <div id="stations-map"></div>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>STATION LIST</h3>
+                        <select id="stations-list" class="form-control">
+                            <option selected disabled>Please Select a Station</option>
+                        </select>
+                        <table id="station-details">
+                            <script id="station-detail-template" type="text/template">
+                                    <tr>
+                                        <td>Available Docks</td><td><%= availableDocks %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Docks</td><td><%= totalDocks %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Status Value</td><td><%= statusValue %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Available Bikes</td><td><%= availableBikes %></td>
+                                    </tr>
+                                <hr />
+                            </script>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-copyright center"><small>&copy; 2014 TORONTO BIKE</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
