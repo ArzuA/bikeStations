@@ -1,22 +1,22 @@
 {
-  "name": "PROG1250Javascript",
+  "name": "OpenShift-Sample-App",
   "version": "1.0.0",
-  "description": "examples from class",
+  "description": "OpenShift Sample Application",
   "keywords": [
+    "OpenShift",
     "Node.js",
-    "test",
-    "express",
-    "template"
+    "application",
+    "openshift"
   ],
   "author": {
-    "name": "Rich Hildred",
-    "email": "rhildred@gmail.com",
-    "url": "http://syndicateme.net/"
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url": "http://www.openshift.com/"
   },
-  "homepage": "https://github.com/rhildred/js-toolbox/tree/master/render-async",
+  "homepage": "http://openshift.redhat.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rhildred/js-toolbox.git"
+    "url": "https://gitub.com/openshift/crankcase"
   },
   "engines": {
     "node": ">= 0.6.0",
@@ -27,10 +27,9 @@
     "express": "*",
     "js-toolbox": "*"
   },
-  "scripts": {
-	    "test": "./test.js"
-  },
   "devDependencies": {},
   "bundleDependencies": [],
-  "main": "TestRunner.js"
+
+  "private": true,
+  "main": "server.js"
 }
