@@ -1,7 +1,7 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "Bike-Stations-App",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Toronto live Bike Stations Application",
   "keywords": [
     "OpenShift",
     "Node.js",
@@ -9,11 +9,9 @@
     "openshift"
   ],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+    "name": "Arzu Atilgan",
+    "email": "arzuatilgan@hotmail.com"
   },
-  "homepage": "http://openshift.redhat.com/",
   "repository": {
     "type": "git",
     "url": "https://gitub.com/openshift/crankcase"
